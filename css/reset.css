@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+html{
+/* 상속이 되는 속성 */
+  font-size:14px;
+  line-height:1;
+  color:#616161;
+  font-family: 'Roboto','NanumGothic',sans-serif;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+header, section, footer, nav, address, article, aside, img, form, input, ul, li, ol,
+a, input, form, textarea, label, iframe, strong,table, tr, td, th, figure, figcaption{
+/* 상속이 안되는 속성 */
+  box-sizing:border-box;
+  margin:0; 
+  padding:0;
+  display:block;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size:14px;
+  font-weight: 400;
+}
+
+img{
+  vertical-align:top;  /* 기본값은 baseline, 이 경우 1px의 여백이 있어서 vertical-align:top으로 맞춰주었음 */
+}
+
+ul, ol, li{
+  list-style:none;
+}
+
+a{
+  color:#616161; /* a태그는 색상이 상속이 안된다. */
+  text-decoration:none;
+}
+
+input, form, textarea{
+  border:none;
+}
+
+.clearfix::after{
+  content:'';
+  display:block;
+  clear:both;
+}
